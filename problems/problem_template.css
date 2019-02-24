@@ -1,0 +1,132 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #d1f7bc;
+}
+main{
+    width: 80%;
+    height:fit-content;
+    background: white;
+    padding:15px;
+    margin: 10px auto;
+}
+.pageTitle{
+    text-decoration: underline;
+    text-align: center;
+}
+.pageNavigation{
+    background: rgb(231, 231, 231);
+    border:solid 1px darkgray;
+    padding:15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.navigation{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+.pageNavigationTitle{
+    text-decoration: underline;
+    padding:0;
+    margin:15px 0;
+}
+.navigation li{
+    margin:5px;
+}
+.navigation a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    padding:5px;
+}
+iframe{
+    /* display:block; */
+    /* margin:0 auto; */
+}
+.videos{
+    margin-bottom:15px;
+    /* background: red; */
+    overflow: scroll;
+}
+.video{
+    width:fit-content;
+    margin: 10px auto;
+    
+}
+.video h2{
+    margin:0 auto;
+    background: rgb(248, 229, 119);
+    padding: 10px;
+}
+.notes{
+    padding:10px;
+    background: rgb(243, 226, 253);
+    border-radius: 10px;
+    border:1px dotted rgb(15, 18, 68);
+    margin-bottom: 10px;
+}
+.notes h2{
+    margin:0;
+    text-align: center;
+    text-decoration: underline;
+}
+.notes h3{
+    margin: 0;
+    text-decoration: underline;
+}
+
+.problem{
+    padding:10px;
+    background: rgb(235, 252, 205);
+    border-radius: 10px;
+    border:1px dotted rgb(23, 102, 65);
+    margin-bottom: 10px;
+}
+.problem:nth-child(2n){
+    background:rgb(206, 234, 245); 
+}
+.questionTitle{
+    text-decoration: underline;
+    padding:0;
+    margin-bottom:10px;
+}
+.problem img{
+    max-width: 60%;
+    max-height: 60%;
+    display: block;
+}
+
+.showAnswer{
+    background: #c2fda0;
+    width:fit-content;
+    padding:5px 25px;
+    margin-top:5px;
+    border-radius: 5px;
+    border: 1px grey dotted;
+}
+.problem:nth-child(2n)> .showAnswer{
+    background: rgb(121, 207, 238);
+}
+.showAnswer:hover{
+    cursor: pointer;
+}
+.answer{
+    /* background:yellow; */
+    border-radius: 5px;
+    padding:10px;
+    margin:5px auto;
+    border: 1px orange solid;
+    display: none;
+}
+.answer img{
+    margin:0 auto;
+}
+@media screen and (max-width: 900px) {
+    .problem img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
