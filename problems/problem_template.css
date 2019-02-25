@@ -49,7 +49,7 @@ iframe{
 .videos{
     margin-bottom:15px;
     /* background: red; */
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 .video{
     width:fit-content;
@@ -130,3 +130,8 @@ iframe{
         max-height: 100%;
     }
 }
+@media screen and (max-width: 600px) {
+    main{
+        width:100%;
+    }
+}    
